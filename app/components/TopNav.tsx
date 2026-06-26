@@ -19,6 +19,11 @@ type InstructionContent = {
     label: string;
     url: string;
   };
+  fieldNotesTitle?: string;
+  fieldNotes?: Array<{
+    title: string;
+    items: string[];
+  }>;
   exampleInvoiceTitle?: string;
   exampleInvoice?: unknown;
   internationalDifferencesTitle?: string;
@@ -202,6 +207,32 @@ export default function TopNav({ activeTab, onTabChange }: TopNavProps) {
                   >
                     {activeInstructionContent.source.label}
                   </a>
+                </div>
+              ) : null}
+              {activeInstructionContent.fieldNotes ? (
+                <div className="mt-5 rounded-md border border-slate-200 bg-white p-4">
+                  <h4 className="text-sm font-semibold text-slate-950">
+                    {activeInstructionContent.fieldNotesTitle ?? "Notas"}
+                  </h4>
+                  <div className="mt-4 space-y-4">
+                    {activeInstructionContent.fieldNotes.map((section) => (
+                      <section
+                        key={section.title}
+                        className="rounded-md border border-slate-100 bg-slate-50 p-4"
+                      >
+                        <h5 className="text-sm font-semibold text-slate-950">
+                          {section.title}
+                        </h5>
+                        <ul className="mt-3 space-y-2 text-sm leading-6 text-slate-700">
+                          {section.items.map((item) => (
+                            <li key={item} className="border-l-2 border-slate-300 pl-3">
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </section>
+                    ))}
+                  </div>
                 </div>
               ) : null}
               {activeInstructionContent.exampleInvoice ? (
