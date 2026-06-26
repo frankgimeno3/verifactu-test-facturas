@@ -1,0 +1,108 @@
+{
+  "title": "Requerimientos VeriFactu para las facturas",
+  "items": [
+    "Cada factura debe conservar un identificador interno unico.",
+    "La serie, numero y fecha de expedicion deben estar informados.",
+    "El emisor debe incluir nombre fiscal y NIF.",
+    "El destinatario debe incluir nombre, pais y NIF cuando corresponda.",
+    "Cada linea debe indicar descripcion, cantidad, base imponible, tipo de IVA e importe de IVA.",
+    "La factura debe incluir desglose fiscal por tipo de impuesto y porcentaje.",
+    "Los importes totales deben cuadrar con la suma de bases e impuestos.",
+    "Las facturas rectificativas deben referenciar las facturas rectificadas.",
+    "El estado de IVA debe identificar si la operacion esta sujeta, exenta o corresponde a exportacion no UE.",
+    "Cuando exista exencion, debe informarse el motivo aplicable."
+  ],
+  "source": {
+    "label": "Agencia Tributaria - Registro de facturacion de alta",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes/registros-facturacion-alta.html"
+  },
+  "exampleInvoiceTitle": "Ejemplo de factura nacional",
+  "exampleInvoice": {
+    "internalInvoiceId": "inv_2026_000001_demo",
+    "invoiceSeries": "A",
+    "invoiceNumber": "2026-000001",
+    "issueDate": "2026-06-26",
+    "operationDate": "2026-06-26",
+    "invoiceType": "F1",
+    "isRectifyingInvoice": false,
+    "rectifiedInvoices": [],
+    "issuerName": "Demo Studio SL",
+    "issuerNif": "B12345678",
+    "issuerAddress": {
+      "street": "Calle Mayor 1",
+      "postalCode": "28013",
+      "city": "Madrid",
+      "country": "ES"
+    },
+    "recipientName": "Cliente Ejemplo SL",
+    "recipientNif": "B87654321",
+    "recipientAddress": {
+      "street": "Calle Serrano 10",
+      "postalCode": "28001",
+      "city": "Madrid",
+      "country": "ES"
+    },
+    "description": "Servicios de consultoria tecnologica",
+    "lineItems": [
+      {
+        "description": "Consultoria mensual",
+        "quantity": 1,
+        "unitPriceWithoutTax": 1000.0,
+        "discountAmount": 0.0,
+        "taxableBase": 1000.0,
+        "vatRate": 21.0,
+        "vatAmount": 210.0
+      }
+    ],
+    "taxBreakdown": [
+      {
+        "taxType": "IVA",
+        "taxRegime": "01",
+        "operationQualification": "S1",
+        "taxableBase": 1000.0,
+        "vatRate": 21.0,
+        "vatAmount": 210.0
+      }
+    ],
+    "totalTaxableBase": 1000.0,
+    "totalVatAmount": 210.0,
+    "totalAmount": 1210.0,
+    "exemptionReason": null,
+    "reverseChargeMention": null,
+    "cashAccountingMention": null,
+    "selfBillingMention": null,
+    "verifactu": {
+      "qrUrl": "https://www2.agenciatributaria.gob.es/...",
+      "qrRequired": true,
+      "visibleLegend": "VERI*FACTU",
+      "recordType": "RegistroAlta",
+      "recordGenerationDateTime": "2026-06-26T12:34:56+02:00",
+      "previousRecord": {
+        "previousIssuerNif": "B12345678",
+        "previousInvoiceSeriesNumber": "A-2026-000000",
+        "previousIssueDate": "2026-06-25",
+        "previousHash": "abc123..."
+      },
+      "hash": "def456...",
+      "systemInfo": {
+        "softwareName": "MiERP",
+        "softwareId": "MIERP",
+        "softwareVersion": "1.0.0",
+        "installationNumber": "inst_001",
+        "producerName": "Demo Software SL",
+        "producerNif": "B11223344"
+      }
+    }
+  },
+  "internationalDifferencesTitle": "Que cambia en facturas internacionales",
+  "internationalDifferences": [
+    "El recipientAddress.country debe reflejar el pais real del destinatario, por ejemplo DE, US o JP, no ES.",
+    "El recipientNif puede no ser un NIF espanol. En operaciones UE suele informarse el VAT ID intracomunitario; fuera de la UE puede usarse el identificador fiscal disponible del cliente.",
+    "El vatRate y el vatAmount pueden ser 0 cuando la operacion este exenta, no sujeta o sea una exportacion fuera de la UE.",
+    "El taxBreakdown debe cambiar operationQualification, taxRegime o exemptionReason segun la naturaleza de la operacion internacional.",
+    "Para operaciones intracomunitarias puede ser necesario indicar inversion del sujeto pasivo o una mencion equivalente en reverseChargeMention.",
+    "Para exportaciones fuera de la UE debe documentarse la exencion aplicable y mantener totalVatAmount en 0 cuando corresponda.",
+    "El totalAmount suele coincidir con totalTaxableBase si no hay IVA repercutido.",
+    "La descripcion y el desglose deben permitir identificar claramente el servicio, el pais del destinatario y el tratamiento fiscal aplicado."
+  ]
+}

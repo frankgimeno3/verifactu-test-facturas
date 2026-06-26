@@ -1,0 +1,156 @@
+[
+  {
+    "lineItemId": "line_000001",
+    "invoiceId": "inv_2026_000001",
+    "description": "Gestión de campaña de marketing de influencers",
+    "quantity": 1,
+    "unitPriceWithoutTax": 900.0,
+    "discountAmount": 0.0,
+    "taxableBase": 900.0,
+    "vatRate": 21,
+    "vatAmount": 189.0
+  },
+  {
+    "lineItemId": "line_000002",
+    "invoiceId": "inv_2026_000001",
+    "description": "Coordinación y seguimiento de publicaciones",
+    "quantity": 1,
+    "unitPriceWithoutTax": 300.0,
+    "discountAmount": 0.0,
+    "taxableBase": 300.0,
+    "vatRate": 21,
+    "vatAmount": 63.0
+  },
+  {
+    "lineItemId": "line_000003",
+    "invoiceId": "inv_2026_000002",
+    "description": "Gestión de campaña anual",
+    "quantity": 1,
+    "unitPriceWithoutTax": 1200.0,
+    "discountAmount": 0.0,
+    "taxableBase": 1200.0,
+    "vatRate": 21,
+    "vatAmount": 252.0
+  },
+  {
+    "lineItemId": "line_000004",
+    "invoiceId": "inv_2026_000002",
+    "description": "Coordinación con creadores de contenido",
+    "quantity": 1,
+    "unitPriceWithoutTax": 800.0,
+    "discountAmount": 0.0,
+    "taxableBase": 800.0,
+    "vatRate": 21,
+    "vatAmount": 168.0
+  },
+  {
+    "lineItemId": "line_000005",
+    "invoiceId": "inv_2026_000002",
+    "description": "Reporting mensual",
+    "quantity": 1,
+    "unitPriceWithoutTax": 500.0,
+    "discountAmount": 0.0,
+    "taxableBase": 500.0,
+    "vatRate": 21,
+    "vatAmount": 105.0
+  },
+  {
+    "lineItemId": "line_000006",
+    "invoiceId": "inv_2026_000003",
+    "description": "Campaña TikTok",
+    "quantity": 1,
+    "unitPriceWithoutTax": 1800.0,
+    "discountAmount": 0.0,
+    "taxableBase": 1800.0,
+    "vatRate": 21,
+    "vatAmount": 378.0
+  },
+  {
+    "lineItemId": "line_000007",
+    "invoiceId": "inv_2026_000003",
+    "description": "Producción de contenido y seguimiento",
+    "quantity": 1,
+    "unitPriceWithoutTax": 1400.0,
+    "discountAmount": 0.0,
+    "taxableBase": 1400.0,
+    "vatRate": 21,
+    "vatAmount": 294.0
+  },
+  {
+    "lineItemId": "line_000008",
+    "invoiceId": "inv_2026_000004",
+    "description": "Campaña internacional para mercado alemán",
+    "quantity": 1,
+    "unitPriceWithoutTax": 3200.0,
+    "discountAmount": 0.0,
+    "taxableBase": 3200.0,
+    "vatRate": 0,
+    "vatAmount": 0.0
+  },
+  {
+    "lineItemId": "line_000009",
+    "invoiceId": "inv_2026_000004",
+    "description": "Consultoría estratégica",
+    "quantity": 1,
+    "unitPriceWithoutTax": 1800.0,
+    "discountAmount": 0.0,
+    "taxableBase": 1800.0,
+    "vatRate": 0,
+    "vatAmount": 0.0
+  },
+  {
+    "lineItemId": "line_000010",
+    "invoiceId": "inv_2026_000005",
+    "description": "Campaña para mercado estadounidense",
+    "quantity": 1,
+    "unitPriceWithoutTax": 2500.0,
+    "discountAmount": 0.0,
+    "taxableBase": 2500.0,
+    "vatRate": 0,
+    "vatAmount": 0.0
+  },
+  {
+    "lineItemId": "line_000011",
+    "invoiceId": "inv_2026_000005",
+    "description": "Coordinación con influencers internacionales",
+    "quantity": 1,
+    "unitPriceWithoutTax": 1600.0,
+    "discountAmount": 0.0,
+    "taxableBase": 1600.0,
+    "vatRate": 0,
+    "vatAmount": 0.0
+  },
+  {
+    "lineItemId": "line_000012",
+    "invoiceId": "inv_2026_000006",
+    "description": "Campaña para mercado japonés",
+    "quantity": 1,
+    "unitPriceWithoutTax": 3000.0,
+    "discountAmount": 0.0,
+    "taxableBase": 3000.0,
+    "vatRate": 0,
+    "vatAmount": 0.0
+  },
+  {
+    "lineItemId": "line_000013",
+    "invoiceId": "inv_2026_000006",
+    "description": "Gestión de creadores de contenido",
+    "quantity": 1,
+    "unitPriceWithoutTax": 2200.0,
+    "discountAmount": 0.0,
+    "taxableBase": 2200.0,
+    "vatRate": 0,
+    "vatAmount": 0.0
+  },
+  {
+    "lineItemId": "line_000014",
+    "invoiceId": "inv_2026_000006",
+    "description": "Análisis de resultados y optimización",
+    "quantity": 1,
+    "unitPriceWithoutTax": 1600.0,
+    "discountAmount": 0.0,
+    "taxableBase": 1600.0,
+    "vatRate": 0,
+    "vatAmount": 0.0
+  }
+]

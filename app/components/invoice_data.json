@@ -1,0 +1,200 @@
+[
+  {
+    "internalInvoiceId": "inv_2026_000001",
+    "invoiceSeries": "2026",
+    "invoiceNumber": 1,
+    "invoice_current_process_state": "pending",
+    "issueDate": "2026-01-15",
+    "operationDate": null,
+    "invoiceType": "F1",
+    "isRectifyingInvoice": false,
+    "rectifiedInvoices": [],
+    "issuerName": "Mi Empresa SL",
+    "issuerNif": "B12345678",
+    "recipientName": "Acme Marketing SL",
+    "recipientCountry": "ES",
+    "recipientNif": "B87654321",
+    "lineItemIds": ["line_000001", "line_000002"],
+    "taxBreakdown": [
+      {
+        "taxType": "IVA",
+        "vatRate": 21,
+        "taxableBase": 1200.0,
+        "vatAmount": 252.0
+      }
+    ],
+    "totalTaxableBase": 1200.0,
+    "totalVatAmount": 252.0,
+    "totalAmount": 1452.0,
+    "vatStatus": "subject",
+    "exemptionReason": null,
+    "reverseCharge": false,
+    "cashAccounting": false,
+    "selfBilling": false
+  },
+  {
+    "internalInvoiceId": "inv_2026_000002",
+    "invoiceSeries": "2026",
+    "invoiceNumber": 2,
+    "invoice_current_process_state": "pending",
+    "issueDate": "2026-02-10",
+    "operationDate": null,
+    "invoiceType": "F1",
+    "isRectifyingInvoice": false,
+    "rectifiedInvoices": [],
+    "issuerName": "Mi Empresa SL",
+    "issuerNif": "B12345678",
+    "recipientName": "Influencers Group SL",
+    "recipientCountry": "ES",
+    "recipientNif": "B11111111",
+    "lineItemIds": ["line_000003", "line_000004", "line_000005"],
+    "taxBreakdown": [
+      {
+        "taxType": "IVA",
+        "vatRate": 21,
+        "taxableBase": 2500.0,
+        "vatAmount": 525.0
+      }
+    ],
+    "totalTaxableBase": 2500.0,
+    "totalVatAmount": 525.0,
+    "totalAmount": 3025.0,
+    "vatStatus": "subject",
+    "exemptionReason": null,
+    "reverseCharge": false,
+    "cashAccounting": false,
+    "selfBilling": false
+  },
+  {
+    "internalInvoiceId": "inv_2026_000003",
+    "invoiceSeries": "2026",
+    "invoiceNumber": 3,
+    "invoice_current_process_state": "pending",
+    "issueDate": "2026-03-05",
+    "operationDate": null,
+    "invoiceType": "F1",
+    "isRectifyingInvoice": false,
+    "rectifiedInvoices": [],
+    "issuerName": "Mi Empresa SL",
+    "issuerNif": "B12345678",
+    "recipientName": "Startup Labs SL",
+    "recipientCountry": "ES",
+    "recipientNif": "B33333333",
+    "lineItemIds": ["line_000006", "line_000007"],
+    "taxBreakdown": [
+      {
+        "taxType": "IVA",
+        "vatRate": 21,
+        "taxableBase": 3200.0,
+        "vatAmount": 672.0
+      }
+    ],
+    "totalTaxableBase": 3200.0,
+    "totalVatAmount": 672.0,
+    "totalAmount": 3872.0,
+    "vatStatus": "subject",
+    "exemptionReason": null,
+    "reverseCharge": false,
+    "cashAccounting": false,
+    "selfBilling": false
+  },
+  {
+    "internalInvoiceId": "inv_2026_000004",
+    "invoiceSeries": "2026",
+    "invoiceNumber": 4,
+    "invoice_current_process_state": "pending",
+    "issueDate": "2026-04-01",
+    "operationDate": null,
+    "invoiceType": "F1",
+    "isRectifyingInvoice": false,
+    "rectifiedInvoices": [],
+    "issuerName": "Mi Empresa SL",
+    "issuerNif": "B12345678",
+    "recipientName": "Berlin Ads GmbH",
+    "recipientCountry": "DE",
+    "recipientNif": "DE123456789",
+    "lineItemIds": ["line_000008", "line_000009"],
+    "taxBreakdown": [
+      {
+        "taxType": "IVA",
+        "vatRate": 0,
+        "taxableBase": 5000.0,
+        "vatAmount": 0.0
+      }
+    ],
+    "totalTaxableBase": 5000.0,
+    "totalVatAmount": 0.0,
+    "totalAmount": 5000.0,
+    "vatStatus": "exempt",
+    "exemptionReason": "E5",
+    "reverseCharge": false,
+    "cashAccounting": false,
+    "selfBilling": false
+  },
+  {
+    "internalInvoiceId": "inv_2026_000005",
+    "invoiceSeries": "2026",
+    "invoiceNumber": 5,
+    "invoice_current_process_state": "pending",
+    "issueDate": "2026-05-12",
+    "operationDate": null,
+    "invoiceType": "F1",
+    "isRectifyingInvoice": false,
+    "rectifiedInvoices": [],
+    "issuerName": "Mi Empresa SL",
+    "issuerNif": "B12345678",
+    "recipientName": "Tech Corp Inc.",
+    "recipientCountry": "US",
+    "recipientNif": "US98-7654321",
+    "lineItemIds": ["line_000010", "line_000011"],
+    "taxBreakdown": [
+      {
+        "taxType": "IVA",
+        "vatRate": 0,
+        "taxableBase": 4100.0,
+        "vatAmount": 0.0
+      }
+    ],
+    "totalTaxableBase": 4100.0,
+    "totalVatAmount": 0.0,
+    "totalAmount": 4100.0,
+    "vatStatus": "non_eu_export",
+    "exemptionReason": "E2",
+    "reverseCharge": false,
+    "cashAccounting": false,
+    "selfBilling": false
+  },
+  {
+    "internalInvoiceId": "inv_2026_000006",
+    "invoiceSeries": "2026",
+    "invoiceNumber": 6,
+    "invoice_current_process_state": "pending",
+    "issueDate": "2026-06-20",
+    "operationDate": null,
+    "invoiceType": "F1",
+    "isRectifyingInvoice": false,
+    "rectifiedInvoices": [],
+    "issuerName": "Mi Empresa SL",
+    "issuerNif": "B12345678",
+    "recipientName": "Nippon Media KK",
+    "recipientCountry": "JP",
+    "recipientNif": "JP1234567890123",
+    "lineItemIds": ["line_000012", "line_000013", "line_000014"],
+    "taxBreakdown": [
+      {
+        "taxType": "IVA",
+        "vatRate": 0,
+        "taxableBase": 6800.0,
+        "vatAmount": 0.0
+      }
+    ],
+    "totalTaxableBase": 6800.0,
+    "totalVatAmount": 0.0,
+    "totalAmount": 6800.0,
+    "vatStatus": "non_eu_export",
+    "exemptionReason": "E2",
+    "reverseCharge": false,
+    "cashAccounting": false,
+    "selfBilling": false
+  }
+]
