@@ -14,8 +14,8 @@ export const invoiceProcessStateOptions: Array<{
   label: string;
 }> = [
   { value: "pending", label: "Facturas pre-verifactu" },
-  { value: "processing", label: "En proceso" },
-  { value: "sent", label: "Facturas enviadas" },
+  { value: "processing", label: "Proceso VeriFactu" },
+  { value: "sent", label: "Facturas post-verifactu" },
 ];
 
 function readStoredStates(): ProcessStateMap {

@@ -14,18 +14,21 @@
     "recipientName": "Acme Marketing SL",
     "recipientCountry": "ES",
     "recipientNif": "B87654321",
-    "lineItemIds": ["line_000001", "line_000002"],
+    "lineItemIds": [
+      "line_000001",
+      "line_000002"
+    ],
     "taxBreakdown": [
       {
         "taxType": "IVA",
         "vatRate": 21,
-        "taxableBase": 1200.0,
-        "vatAmount": 252.0
+        "taxableBase": 1200,
+        "vatAmount": 252
       }
     ],
-    "totalTaxableBase": 1200.0,
-    "totalVatAmount": 252.0,
-    "totalAmount": 1452.0,
+    "totalTaxableBase": 1200,
+    "totalVatAmount": 252,
+    "totalAmount": 1452,
     "vatStatus": "subject",
     "exemptionReason": null,
     "reverseCharge": false,
@@ -36,7 +39,7 @@
     "internalInvoiceId": "inv_2026_000002",
     "invoiceSeries": "2026",
     "invoiceNumber": 2,
-    "invoice_current_process_state": "pending",
+    "invoice_current_process_state": "sent",
     "issueDate": "2026-02-10",
     "operationDate": null,
     "invoiceType": "F1",
@@ -47,23 +50,49 @@
     "recipientName": "Influencers Group SL",
     "recipientCountry": "ES",
     "recipientNif": "B11111111",
-    "lineItemIds": ["line_000003", "line_000004", "line_000005"],
+    "lineItemIds": [
+      "line_000003",
+      "line_000004",
+      "line_000005"
+    ],
     "taxBreakdown": [
       {
         "taxType": "IVA",
         "vatRate": 21,
-        "taxableBase": 2500.0,
-        "vatAmount": 525.0
+        "taxableBase": 2500,
+        "vatAmount": 525
       }
     ],
-    "totalTaxableBase": 2500.0,
-    "totalVatAmount": 525.0,
-    "totalAmount": 3025.0,
+    "totalTaxableBase": 2500,
+    "totalVatAmount": 525,
+    "totalAmount": 3025,
     "vatStatus": "subject",
     "exemptionReason": null,
     "reverseCharge": false,
     "cashAccounting": false,
-    "selfBilling": false
+    "selfBilling": false,
+    "verifactu": {
+      "qrUrl": "asd",
+      "qrRequired": true,
+      "visibleLegend": "VERI*FACTU",
+      "recordType": "RegistroAlta",
+      "recordGenerationDateTime": "2124124",
+      "previousRecord": {
+        "previousIssuerNif": "",
+        "previousInvoiceSeriesNumber": "",
+        "previousIssueDate": "",
+        "previousHash": "asd"
+      },
+      "hash": "asd",
+      "systemInfo": {
+        "softwareName": "adsd",
+        "softwareId": "asdas",
+        "softwareVersion": "das",
+        "installationNumber": "ad",
+        "producerName": "das",
+        "producerNif": "ads"
+      }
+    }
   },
   {
     "internalInvoiceId": "inv_2026_000003",
@@ -80,18 +109,21 @@
     "recipientName": "Startup Labs SL",
     "recipientCountry": "ES",
     "recipientNif": "B33333333",
-    "lineItemIds": ["line_000006", "line_000007"],
+    "lineItemIds": [
+      "line_000006",
+      "line_000007"
+    ],
     "taxBreakdown": [
       {
         "taxType": "IVA",
         "vatRate": 21,
-        "taxableBase": 3200.0,
-        "vatAmount": 672.0
+        "taxableBase": 3200,
+        "vatAmount": 672
       }
     ],
-    "totalTaxableBase": 3200.0,
-    "totalVatAmount": 672.0,
-    "totalAmount": 3872.0,
+    "totalTaxableBase": 3200,
+    "totalVatAmount": 672,
+    "totalAmount": 3872,
     "vatStatus": "subject",
     "exemptionReason": null,
     "reverseCharge": false,
@@ -113,18 +145,21 @@
     "recipientName": "Berlin Ads GmbH",
     "recipientCountry": "DE",
     "recipientNif": "DE123456789",
-    "lineItemIds": ["line_000008", "line_000009"],
+    "lineItemIds": [
+      "line_000008",
+      "line_000009"
+    ],
     "taxBreakdown": [
       {
         "taxType": "IVA",
         "vatRate": 0,
-        "taxableBase": 5000.0,
-        "vatAmount": 0.0
+        "taxableBase": 5000,
+        "vatAmount": 0
       }
     ],
-    "totalTaxableBase": 5000.0,
-    "totalVatAmount": 0.0,
-    "totalAmount": 5000.0,
+    "totalTaxableBase": 5000,
+    "totalVatAmount": 0,
+    "totalAmount": 5000,
     "vatStatus": "exempt",
     "exemptionReason": "E5",
     "reverseCharge": false,
@@ -146,18 +181,21 @@
     "recipientName": "Tech Corp Inc.",
     "recipientCountry": "US",
     "recipientNif": "US98-7654321",
-    "lineItemIds": ["line_000010", "line_000011"],
+    "lineItemIds": [
+      "line_000010",
+      "line_000011"
+    ],
     "taxBreakdown": [
       {
         "taxType": "IVA",
         "vatRate": 0,
-        "taxableBase": 4100.0,
-        "vatAmount": 0.0
+        "taxableBase": 4100,
+        "vatAmount": 0
       }
     ],
-    "totalTaxableBase": 4100.0,
-    "totalVatAmount": 0.0,
-    "totalAmount": 4100.0,
+    "totalTaxableBase": 4100,
+    "totalVatAmount": 0,
+    "totalAmount": 4100,
     "vatStatus": "non_eu_export",
     "exemptionReason": "E2",
     "reverseCharge": false,
@@ -179,18 +217,22 @@
     "recipientName": "Nippon Media KK",
     "recipientCountry": "JP",
     "recipientNif": "JP1234567890123",
-    "lineItemIds": ["line_000012", "line_000013", "line_000014"],
+    "lineItemIds": [
+      "line_000012",
+      "line_000013",
+      "line_000014"
+    ],
     "taxBreakdown": [
       {
         "taxType": "IVA",
         "vatRate": 0,
-        "taxableBase": 6800.0,
-        "vatAmount": 0.0
+        "taxableBase": 6800,
+        "vatAmount": 0
       }
     ],
-    "totalTaxableBase": 6800.0,
-    "totalVatAmount": 0.0,
-    "totalAmount": 6800.0,
+    "totalTaxableBase": 6800,
+    "totalVatAmount": 0,
+    "totalAmount": 6800,
     "vatStatus": "non_eu_export",
     "exemptionReason": "E2",
     "reverseCharge": false,

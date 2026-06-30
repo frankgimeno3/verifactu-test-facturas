@@ -3,13 +3,11 @@
 import type { ReactNode } from "react";
 import { useState } from "react";
 import PendingInvoicesScreen from "./components/screens/PendingInvoicesScreen";
-import ProcessingInvoicesScreen from "./components/screens/ProcessingInvoicesScreen";
 import SentInvoicesScreen from "./components/screens/SentInvoicesScreen";
 import TopNav, { type InvoiceTab } from "./components/TopNav";
 
 const screens: Record<InvoiceTab, ReactNode> = {
   pending: <PendingInvoicesScreen />,
-  processing: <ProcessingInvoicesScreen />,
   sent: <SentInvoicesScreen />,
 };
 

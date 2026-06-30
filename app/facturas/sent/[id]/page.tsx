@@ -7,5 +7,5 @@ export default async function SentInvoicePage({
 }) {
   const { id } = await params;
 
-  return <InvoiceDetail id={id} />;
+  return <InvoiceDetail id={id} expectedState="sent" />;
 }

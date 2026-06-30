@@ -7,5 +7,5 @@ export default async function PendingInvoicePage({
 }) {
   const { id } = await params;
 
-  return <InvoiceDetail id={id} />;
+  return <InvoiceDetail id={id} expectedState="pending" />;
 }

@@ -1,11 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import invoices from "../invoice_data.json";
-import {
-  type InvoiceProcessState,
-  useInvoiceProcessStates,
-} from "../invoiceProcessState";
+import { useEffect, useState } from "react";
+import type { InvoiceProcessState } from "../../lib/invoiceStore";
 
 export type InvoiceStatus = InvoiceProcessState;
 
@@ -13,7 +10,18 @@ type InvoiceTableProps = {
   title: string;
   description: string;
   status: InvoiceStatus;
-  basePath: `/facturas/${InvoiceStatus}`;
+  basePath: "/facturas/pending" | "/facturas/sent";
+};
+
+type InvoiceRow = {
+  internalInvoiceId: string;
+  invoiceSeries: string;
+  invoiceNumber: number;
+  invoice_current_process_state: InvoiceStatus;
+  issueDate: string;
+  recipientName: string;
+  recipientCountry: string;
+  totalAmount: number;
 };
 
 const currencyFormatter = new Intl.NumberFormat("es-ES", {
@@ -37,13 +45,32 @@ export default function InvoiceTable({
   status,
   basePath,
 }: InvoiceTableProps) {
-  const { getInvoiceState } = useInvoiceProcessStates();
+  const [invoices, setInvoices] = useState<InvoiceRow[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    async function loadInvoices() {
+      setIsLoading(true);
+      const response = await fetch("/api/invoices", { cache: "no-store" });
+      const body = (await response.json()) as { invoices: InvoiceRow[] };
+
+      if (isMounted) {
+        setInvoices(body.invoices);
+        setIsLoading(false);
+      }
+    }
+
+    loadInvoices();
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
   const filteredInvoices = invoices.filter(
-    (invoice) =>
-      getInvoiceState(
-        invoice.internalInvoiceId,
-        invoice.invoice_current_process_state as InvoiceStatus,
-      ) === status,
+    (invoice) => invoice.invoice_current_process_state === status,
   );
 
   return (
@@ -92,10 +119,17 @@ export default function InvoiceTable({
                   </td>
                 </tr>
               ))}
-              {filteredInvoices.length === 0 ? (
+              {!isLoading && filteredInvoices.length === 0 ? (
                 <tr>
                   <td className="px-4 py-8 text-center text-slate-500" colSpan={5}>
                     No hay facturas en este estado.
+                  </td>
+                </tr>
+              ) : null}
+              {isLoading ? (
+                <tr>
+                  <td className="px-4 py-8 text-center text-slate-500" colSpan={5}>
+                    Cargando facturas...
                   </td>
                 </tr>
               ) : null}
